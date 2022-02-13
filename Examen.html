@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/marmotita.png">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+               
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="Validacion.html">Usuario</a>
+                    <a href="Registro.html">Registro</a>
+                    <a href="index.html">Pagina Principal</a>
+                    <a href="Integrantes.html">Integrantes</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+    <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Registro De Examen</h2>
+    <form class="contacto" action="">
+        <fieldset>
+            <legend>Datos de Examen</legend>
+
+            <p>¿Es usted repetidor del examen?:</p>
+
+            <div class="forma-contacto">
+                <label for="telefono">Si</label>
+                <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                <label for="correo">No</label>
+                <input type="radio" name="contacto" value="correo" id="correo">
+            </div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" min="09:00" max="18:00">
+        </fieldset>
+        <input type="submit" value="Enviar" class="boton boton-verde">
+    </form>
+    </main>
+</body>
+<audio src="flip.mp3" loop="3" autoplay="true"></audio>
+</html>

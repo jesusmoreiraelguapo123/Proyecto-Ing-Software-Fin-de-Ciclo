@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usuarios</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/marmotita.png">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body background="img/eljhon.jpeg">
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+              
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="index.html">Pagina Principal</a>
+                    <a href="Registro.html">Registro</a>
+                    <a href="Examen.html">Examen</a>
+                    <a href="Integrantes.html">Integrantes</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+    <main>
+        <div class="box">
+      
+          <form action="#" method="post" id="autonomo" onsubmit ="return false; " class="formulario">
+              
+              <h1>Formulario</h1>
+              <div class="contenedor">
+           
+                  <div class="input-contenedor">
+                      <i class="fas fa-user icon"></i>
+                      <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+               
+                  </div>
+               
+                  <div class="input-contenedor">
+                      <i class="fas fa-envelope icon"></i>
+                      <input type="text" name="nombre" id="nombre"  placeholder="Nombre y Apellido">
+               
+                  </div>
+      
+                      <div class="input-contenedor">
+                      <i class="fas fa-key icon"></i>
+                      <input type="text" name="telefono" id="telefono"  placeholder="Telefono">
+                  </div>
+      
+                  <div class="input-contenedor">
+                      <i class="fas fa-key icon"></i>
+                      <input type="text"  name="cedula" id="cedula"  placeholder="Cedula">
+                  </div>
+                  <p>Al subir sus datos esta aceptando todos los terminos.</p>
+                  <input type="submit" values="enviar" id="submit" class="boton">
+              </div>
+              <div class="botonparamostrar" align="center">
+              
+               
+               </div>
+          </form>
+          </div>
+          <br>
+               <div class ="tabla" align="center">
+               <table border="3" >
+                  <div class="box dashed">
+                  <h3>INFORMACION DEL PERSONAL</h3>
+                  <hr>
+                  <p id="p_usuario">
+                    Usuario: <span></span>
+                  </p>
+                  <p id="p_nombre">
+                    Apellido y Nombre: <span></span>
+                  </p>
+                  <p id="p_telefono">
+                    Telefono: <span></span>
+                  </p>
+                  <p id="p_cedula">
+                    Cedula: <span></span>
+                  </p>
+                  </div>
+        </div>
+    </main>
+          <script src="eventos.js"></script>
+<audio src="falling.mp3" loop="3" autoplay="true"></audio>       
+</body>
+</html>

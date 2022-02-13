@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/marmotita.png">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="Validacion.html">Usuario</a>
+                    <a href="index.html">Pagina Principal</a>
+                    <a href="Examen.html">Examen</a>
+                    <a href="Integrantes.html">Integrantes</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+    <h1 class="fw-300 centrar-texto">Registro de Estudiante</h1>
+
+    <main class="contenedor seccion contenido-centrado">
+
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea  id="mensaje"></textarea>
+            </fieldset>
+                
+
+            <fieldset>
+                <legend>Genero/Edad</legend>
+                <label for="opciones">Genero</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Compra">Masculino</option>
+                    <option value="Vende">Femenino</option>
+                </select>
+
+                <label for="cantidad">Edad:</label>
+                <input type="number" min="12" max="70" step="1">
+            </fieldset>
+            <input type="submit" value="Enviar" class="boton boton-verde">
+
+        </form>
+        
+    </main>
+</body>
+<audio src="dance.mp3" loop="3" autoplay="true"></audio>
+</html>
